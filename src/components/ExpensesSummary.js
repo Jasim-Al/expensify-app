@@ -6,7 +6,7 @@ import numeral from 'numeral'
 
 export const ExpensesSummary = props => (
     <div>
-       <p>Viewing {props.expensesLength} {props.expensesLength > 1 ? 'expenses' : 'expense' } totalling {numeral(props.sum/100).format('$0,0.00')} </p>
+       <h1>Viewing {props.expensesLength} {props.expensesLength > 1 ? 'expenses' : 'expense' } totalling {numeral(props.sum/100).format('$0,0.00')} </h1>
     </div>
 );
 
